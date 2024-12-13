@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.connect.StartupController">
+    <!-- Background Image -->
+    <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="false">
+        <image>
+            <Image url="@Zawajify.png" />
+        </image>
+    </ImageView>
+
+    <!-- ProgressBar aligned at the bottom -->
+    <ProgressBar fx:id="progressBar" prefWidth="400.0" styleClass="red-bar" StackPane.alignment="BOTTOM_CENTER" />
+
+</StackPane>
