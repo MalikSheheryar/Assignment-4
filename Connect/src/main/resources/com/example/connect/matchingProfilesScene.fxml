@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<StackPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.connect.MatchingController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@Zawajify.png" />
+        </image>
+    </ImageView>
+
+    <!-- Your VBox content -->
+    <VBox alignment="CENTER" opacity="0.86" spacing="10" style="-fx-background-color: #c61b1b;">
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+
+
+        <Label text="Matching Profiles:" />
+        <ListView fx:id="profilesListView" prefHeight="400" VBox.vgrow="ALWAYS" />
+        <Button fx:id="viewProfileButton" onAction="#handleViewProfile" text="View Profile" />
+    </VBox>
+</StackPane>
