@@ -1,10 +1,12 @@
 package com.example.connect;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.*;
 
-public class Profile {
+public class Profile{
+
     private String city;
     private int age;
     private String name;
